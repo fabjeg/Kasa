@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+}
+.liens {
+  display: flex;
+  gap: 35px;
+  font-weight: 500;
+  color: black;
+  .acceuil {
+    color: black;
+  }
+  .apropos {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
