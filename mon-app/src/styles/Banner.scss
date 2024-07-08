@@ -1,0 +1,53 @@
+// .container{
+//     position: relative;
+//     width: 100%;
+//     margin: 0 auto;
+//     padding-inline: 4rem;
+//   .mountain {
+//     width: 90%;
+//     height: 223px;
+//     border-radius: 25px;
+//     object-fit: cover;
+//     filter: brightness(0.6);
+//   }
+//   .title {
+//     position: absolute;
+//     bottom: 25%;
+//     left: 25%;
+//     font-family: Montserrat;
+//     font-size: 48px;
+//     font-weight: 700;
+//     line-height: 68.45px;
+//     color: #fff;
+//     text-align: center;
+//   }
+//   }
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px; 
+
+  .mountain {
+    width: 90%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+  .title {
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68.45px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+
