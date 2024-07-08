@@ -1,28 +1,51 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-}
-.navbar {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-.liens {
+.link {
   display: flex;
-  gap: 35px;
+  gap: 45px;
+  font-family: Montserrat;
+  font-size: 24px;
   font-weight: 500;
+  line-height: 34.22px;
   color: black;
-  .acceuil {
-    color: black;
-  }
-  .apropos {
+  .active {
     text-decoration: none;
     color: black;
   }
+  .active:hover {
+    text-decoration: underline;
+  }
+  .active2{
+    text-decoration: none;
+  }
 }
-
-
+.container{
+  position: relative;
+  width: 100%;
+  margin: 0 auto; 
+.mountain {
+  width: 90%;
+  height: 223px;
+  border-radius: 25px;
+  object-fit: cover;
+  margin: 50px 0px 43px 5%;
+  filter: brightness(0.6);
+}
+.test2 {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  transform: translateX(-7%);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 68.45px;
+  color: #fff;
+  text-align: center;
+}
+}
