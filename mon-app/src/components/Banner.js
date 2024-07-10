@@ -9,7 +9,10 @@ function Banner() {
         src={montagne}
         alt="mountain"
       />
-      <h1 className="title">Chez vous, partout et ailleurs</h1>
+      <h1 className="title">
+        Chez vous,
+        <br /> partout et ailleurs
+      </h1>
     </div>
   );
 }

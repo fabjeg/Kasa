@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 5% 5% 5%;
+  margin: 0 5% 3% 5%;
 }
 .link {
   display: flex;
@@ -20,5 +20,21 @@
   }
   .active2{
     text-decoration: none;
+  }
+}
+@media(max-width: 519px){
+  .header{
+    img{
+      width: 145px;
+      height: 46.88px;
+    }
+    .link{
+      font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 17.11px;
+text-align: right;
+
+    }
   }
 }

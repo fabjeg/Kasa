@@ -1,12 +1,48 @@
-.container-cartes {
-    position: relative;
-    width: 90%;
-    border-radius: 25px;
-    background-color: #F6F6F6;
-    margin-top: 43px;
-    margin-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.apartment-container {
+  width: 90%;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  margin-top: 43px;
+  margin-left: 5%;
+  .container-cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 52px;
+    padding: 0 50px 100px 50px;
+    li {
+      list-style-type: none;
+      height: 330px;
+      img {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 335px;
+        border-radius: 10px;
+      }
+      h2 {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25.67px;
+        padding: 1rem;
+        margin: 0;
+        color: #f6f6f6;
+      }
+    }
+  }
+}
+@media(max-width: 519px){
+  .apartment-container{
+   background-color: white;
 
+  .container-cartes{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0;
+    margin-top: -69px;
+    li{
+      height: 300px;
+    }
+  }
+}
 }

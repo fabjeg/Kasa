@@ -5,6 +5,7 @@ import App from "../src/components/App";
 import Banner from "../src/components/Banner";
 import Cartes from "../src/components/Cartes";
 import Main from "../src/components/Main.js";
+import Footer from "../src/components/footer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,5 +15,6 @@ root.render(
       <Banner />
       <Cartes />
     </Main>
+    <Footer />
   </React.StrictMode>
 );

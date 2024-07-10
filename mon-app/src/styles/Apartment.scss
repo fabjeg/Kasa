@@ -1,24 +1,9 @@
-.Apartment {
-  background: linear-gradient(
-    180deg,
-    rgba(238, 129, 129, 1) 1%,
-    rgba(247, 5, 5, 1) 40%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  border-radius: 10px;
-  flex-basis: 280px;
-  height: 340px;
-  display: grid;
-  align-items: end;
-  margin: 25px;
-  p {
-    width: 50%;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 25.67px;
-    color: #ffff;
-    padding: 1rem;
-    margin: 0;
-  }
+.apartment{
+    position: relative;
+   margin: 56px 0 0 0;
+}
+.text-overlay{
+    position: absolute;
+    top: 73%;
+    max-width: 90%;
 }

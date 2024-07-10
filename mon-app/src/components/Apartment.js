@@ -1,9 +1,16 @@
 import "../styles/Apartment.scss";
 
-function Apartment() {
+function Apartment({ data }) {
   return (
-    <div className="Apartment">
-      <p>Titre de la location</p>
+    <div className="apartment">
+      <img
+        src={data.cover}
+        alt={data.title}
+        className="apartment-cover"
+      />
+      <div className="text-overlay">
+        <h2>{data.title}</h2>
+      </div>
     </div>
   );
 }
