@@ -8,7 +8,7 @@
     background-color: #ff6060;
     border-radius: 5px;
     border: none;
-    margin-top: 30px;
+    margin-top: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,16 +33,14 @@ P{
   line-height: 25.67px;
   padding: 20px 20px 20px 20px;
   margin: 0;
-  animation: height 1s;
+  animation: height 4s;
 }
 
 @keyframes height {
   from {
-    transform: translateY(0%);
     opacity: 0;
   }
   to {
-    transform: translateY(100ù);
     opacity: 1;
   }
 }

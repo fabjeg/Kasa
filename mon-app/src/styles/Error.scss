@@ -1,0 +1,47 @@
+.error {
+  color: #ff6060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h3 {
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 410.69px;
+    margin: 0;
+  }
+  p {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    color: #ff6060;
+  }
+  br{
+    display: none;
+  }
+  .link-error {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 51.34px;
+    color: black;
+  }
+}
+@media (max-width: 690px) {
+  .error {
+    h3 {
+      font-size: 96px;
+    }
+    p{
+        margin-left: 30px;
+    }
+    br{
+        display: block;
+    }
+    .link-error{
+        margin-top: 113px;
+    }
+  }
+}
