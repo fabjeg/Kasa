@@ -18,23 +18,19 @@
   .active:hover {
     text-decoration: underline;
   }
-  .active2{
-    text-decoration: none;
-  }
 }
-@media(max-width: 519px){
-  .header{
-    img{
+@media (max-width: 519px) {
+  .header {
+    img {
       width: 145px;
       height: 46.88px;
     }
-    .link{
+    .link {
       font-family: Montserrat;
-font-size: 12px;
-font-weight: 500;
-line-height: 17.11px;
-text-align: right;
-
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17.11px;
+      text-align: right;
     }
   }
 }

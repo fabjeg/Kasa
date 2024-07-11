@@ -1,6 +1,6 @@
 import "../styles/Apartment.scss";
 
-function Apartment({ data }) {
+export function Apartment({ data }) {
   return (
     <div className="apartment">
       <img
@@ -15,4 +15,3 @@ function Apartment({ data }) {
   );
 }
 
-export default Apartment;

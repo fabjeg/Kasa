@@ -1,7 +1,7 @@
 import montagne from "../assets/montagne.png";
 import "../styles/Banner.scss";
 
-function Banner() {
+export function Banner() {
   return (
     <div className="container">
       <img
@@ -16,4 +16,3 @@ function Banner() {
     </div>
   );
 }
-export default Banner;

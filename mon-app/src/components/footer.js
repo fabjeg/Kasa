@@ -3,7 +3,7 @@ import Logo_footer from "../assets/logo_kasa_footer.png";
 import Text_footer from "../assets/text_footer.png";
 import Text_footer_2 from "../assets/logo-2.png";
 
-function Footer() {
+export function Footer() {
   return (
     <div className="container-footer">
       <img
@@ -24,5 +24,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

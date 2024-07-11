@@ -1,8 +1,8 @@
 import "../styles/Cartes.scss";
-import Apartment from "../components/Apartment";
+import { Apartment } from "../components";
 import ListData from "../datas/liste.json";
 
-function Cartes() {
+export function Cartes() {
   return (
     <div className="apartment-container">
       <ul className="container-cartes">
@@ -15,5 +15,3 @@ function Cartes() {
     </div>
   );
 }
-
-export default Cartes;
