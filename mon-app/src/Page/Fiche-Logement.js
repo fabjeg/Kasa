@@ -40,12 +40,12 @@ const renderTags = (tags) => {
       key={index}
       className="tag"
     >
-      {tag.split(" ").map((word, index) => (
+      {tag.split(" ").map((equipment, index) => (
         <span
           key={index}
-          className="tag-word"
+          className="tag-equipment"
         >
-          {word}
+          {equipment}
         </span>
       ))}
     </div>

@@ -15,21 +15,17 @@ export function Carousel() {
     }
   }, [id]);
 
-  if (!filteredPictures || filteredPictures.length === 0) {
-    return <div>Aucune image disponible pour cet id</div>;
-  }
-
   const totalImages = filteredPictures.length;
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
-  };
 
   const prevImage = () => {
     setCurrentImageIndex(
       (prevIndex) => (prevIndex - 1 + totalImages) % totalImages
     );
   };
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
+  };
+
   return (
     <div className="carousel">
       <div
