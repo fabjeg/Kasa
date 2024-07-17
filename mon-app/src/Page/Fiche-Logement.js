@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { Header } from "../components/Header";
+import { Header, Footer, Collapse } from "../components";
 import { Carousel } from "./Carousel";
-import { Collapse } from "./Collapse";
-import { Footer } from "../components/Footer";
 import ListData from "../datas/liste.json";
 import { useParams } from "react-router-dom";
 import "../styles/FicheLogement.scss";
@@ -16,19 +14,9 @@ const renderStars = (rating) => {
     <div>
       {[...Array(totalStars)].map((_, index) => {
         if (index < rating) {
-          return (
-            <i
-              key={index}
-              className="fa-solid fa-star filled-star"
-            ></i>
-          );
+          return <i key={index} className="fa-solid fa-star filled-star"></i>;
         }
-        return (
-          <i
-            key={index}
-            className="fa-solid fa-star empty-star"
-          ></i>
-        );
+        return <i key={index} className="fa-solid fa-star empty-star"></i>;
       })}
     </div>
   );
@@ -36,15 +24,9 @@ const renderStars = (rating) => {
 
 const renderTags = (tags) => {
   return tags.map((tag, index) => (
-    <div
-      key={index}
-      className="tag"
-    >
+    <div key={index} className="tag">
       {tag.split(" ").map((equipment, index) => (
-        <span
-          key={index}
-          className="tag-equipment"
-        >
+        <span key={index} className="tag-equipment">
           {equipment}
         </span>
       ))}
@@ -82,14 +64,13 @@ export function FicheLogement() {
       </div>
       <div className="container-collapses">
         <div className="collapses">
-          <Collapse label="Description">
-            <p>{liste.description}</p>
-          </Collapse>
-          <Collapse label="Équipement">
-            {liste.equipments.map((equipment, index) => (
+          <Collapse label="Description" content={liste.description} />
+          <Collapse
+            label="Équipement"
+            content={liste.equipments.map((equipment, index) => (
               <p key={index}>{equipment}</p>
             ))}
-          </Collapse>
+          />
         </div>
       </div>
       <Footer />
