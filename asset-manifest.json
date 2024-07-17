@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Kasa/static/css/main.f640d168.css",
+    "main.js": "/Kasa/static/js/main.a7a69572.js",
+    "static/media/Mountain_ranges.png": "/Kasa/static/media/Mountain_ranges.04bb28737c342033eb45.png",
+    "static/media/montagne.png": "/Kasa/static/media/montagne.f164ecfbaa0932d45836.png",
+    "index.html": "/Kasa/index.html",
+    "main.f640d168.css.map": "/Kasa/static/css/main.f640d168.css.map",
+    "main.a7a69572.js.map": "/Kasa/static/js/main.a7a69572.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f640d168.css",
+    "static/js/main.a7a69572.js"
+  ]
+}
