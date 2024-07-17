@@ -1,21 +1,39 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "../styles/Collapse.scss";
 
 export function Collapse(props) {
-  const [open, setOPen] = useState(false);
-  const arrow = () => {
-    setOPen(!open);
+  const [open, setOpen] = useState(false);
+  const contentRef = useRef(null);
+
+  const toggleCollapse = () => {
+    setOpen(!open);
   };
+
+  useEffect(() => {
+    if (contentRef.current) {
+      if (open) {
+        contentRef.current.style.maxHeight = `${contentRef.current.scrollHeight}px`;
+      } else {
+        contentRef.current.style.maxHeight = "0px";
+      }
+    }
+  }, [open]);
+
   return (
     <div className="collapse">
       <button>
         {props.label}
         <i
-          onClick={arrow}
+          onClick={toggleCollapse}
           className={`fa-solid fa-chevron-up arrow ${open ? "rotate" : ""}`}
         ></i>
       </button>
-      {open && <div className="toggle">{props.children}</div>}
+      <div
+        ref={contentRef}
+        className={`toggle ${open ? "open" : ""}`}
+      >
+        {props.children}
+      </div>
     </div>
   );
 }

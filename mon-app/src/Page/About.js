@@ -4,7 +4,7 @@ import { Banner2 } from "./Banner2";
 import { Collapse } from "./Collapse";
 import { Container } from "./Container";
 
-export function About(props) {
+export function About() {
   return (
     <div>
       <Header />
