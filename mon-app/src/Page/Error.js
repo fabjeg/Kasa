@@ -1,6 +1,5 @@
 import React from "react";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
+import { Header, Footer } from "../components";
 import "../styles/Error.scss";
 import { NavLink } from "react-router-dom";
 
@@ -14,10 +13,7 @@ export function Error() {
           Oups! La page que
           <br /> vous demandez n'existe pas.
         </p>
-        <NavLink
-          to={"/"}
-          className="link-error"
-        >
+        <NavLink to={"/"} className="link-error">
           Retour à la page d'accueil
         </NavLink>
       </div>

@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { Header } from "../components/Header";
+import { Header, Footer, Collapse } from "../components";
 import { Carousel } from "./Carousel";
-import { Collapse } from "./Collapse";
-import { Footer } from "../components/Footer";
 import ListData from "../datas/liste.json";
 import { useParams } from "react-router-dom";
 import "../styles/FicheLogement.scss";
@@ -40,9 +38,9 @@ const renderTags = (tags) => {
       key={index}
       className="tag"
     >
-      {tag.split(" ").map((equipment, index) => (
+      {tag.split(" ").map((equipment, subIndex) => (
         <span
-          key={index}
+          key={subIndex}
           className="tag-equipment"
         >
           {equipment}
@@ -82,14 +80,16 @@ export function FicheLogement() {
       </div>
       <div className="container-collapses">
         <div className="collapses">
-          <Collapse label="Description">
-            <p>{liste.description}</p>
-          </Collapse>
-          <Collapse label="Équipement">
-            {liste.equipments.map((equipment, index) => (
+          <Collapse
+            label="Description"
+            content={liste.description}
+          />
+          <Collapse
+            label="Équipement"
+            content={liste.equipments.map((equipment, index) => (
               <p key={index}>{equipment}</p>
             ))}
-          </Collapse>
+          />
         </div>
       </div>
       <Footer />

@@ -1,18 +1,9 @@
-import montagne from "../assets/montagne.png";
 import "../styles/Banner.scss";
-
-export function Banner() {
+export function Banner({ image, description }) {
   return (
     <div className="container">
-      <img
-        className="mountain"
-        src={montagne}
-        alt="mountain"
-      />
-      <h1 className="title">
-        Chez vous,
-        <br /> partout et ailleurs
-      </h1>
+      <img className="mountain" src={image} alt="mountain" />
+      {description?.length > 0 && <h1 className="title">{description}</h1>}
     </div>
   );
 }

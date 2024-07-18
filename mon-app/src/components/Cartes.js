@@ -7,12 +7,9 @@ export function Cartes() {
   return (
     <div className="apartment-container">
       <ul className="container-cartes">
-        {ListData.map((item) => (
-          <li>
-            <Link
-              to={`/Fiche-Logement/${item.id}`}
-              key={item.id}
-            >
+        {ListData.map((item, index) => (
+          <li key={index}>
+            <Link to={`/Fiche-Logement/${item.id}`} key={item.id}>
               <Apartment data={item} />
             </Link>
           </li>

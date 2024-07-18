@@ -52,6 +52,7 @@
   .image-host {
     width: 64px;
     height: 64px;
+    margin-left: 11px;
     border-radius: 63px;
   }
 }
@@ -136,11 +137,15 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
-      width: 93%;
+      width: 100%;
       margin: 0;
+    }
+    figure{
+      margin-right: 20px;
     }
   }
   .container-collapses {
+    margin-inline: 20px;
     .collapses {
       flex-direction: column;
       gap: 20px;
@@ -152,4 +157,5 @@
       }
     }
   }
+  
 }

@@ -32,7 +32,7 @@ export function Collapse(props) {
         ref={contentRef}
         className={`toggle ${open ? "open" : ""}`}
       >
-        <div className="text">{props.children}</div>
+        <div className="text">{props.content}</div>
       </div>
     </div>
   );
