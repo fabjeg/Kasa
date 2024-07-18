@@ -8,6 +8,7 @@ import "../styles/FicheLogement.scss";
 const findList = (id) => {
   return ListData.find((liste) => liste.id === id);
 };
+
 const renderStars = (rating) => {
   const totalStars = 5;
   return (
