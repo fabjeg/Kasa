@@ -73,20 +73,23 @@
     margin-right: 10px;
   }
 }
-
-.tags {
-  display: flex;
-  justify-content: flex-start;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 19.96px;
-  text-align: center;
-  color: white;
+.tags{
+ display: flex;
+ flex-wrap: wrap;
+}
   .tag {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 5px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.96px;
+    text-align: center;
+    color: white;
+
+   
     .tag-equipment {
       width: 115px;
       height: 25px;
@@ -97,8 +100,9 @@
       background-color: #ff6060;
     }
   }
-}
+
 .container-collapses {
+  margin-inline: 100px;
   .collapses {
     width: 100%;
     display: flex;
