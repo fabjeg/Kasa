@@ -14,7 +14,7 @@ root.render(
           element={<Home />}
         />
         <Route
-          path="/kasa"
+          path="/kasa/"
           element={<Home />}
         />
         <Route
