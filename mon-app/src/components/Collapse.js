@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import "../styles/Collapse.scss";
 
 export function Collapse(props) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); /*le collapse reste fermé*/
   const contentRef = useRef(null);
 
   const toggleCollapse = () => {
