@@ -32,7 +32,11 @@ export function About() {
       <Banner image={mountain} />
       <Container>
         {aboutData.map(({ label, content }, index) => (
-          <Collapse key={index} label={label} content={content} />
+          <Collapse
+            key={index}
+            label={label}
+            content={content}
+          />
         ))}
       </Container>
       <Footer />

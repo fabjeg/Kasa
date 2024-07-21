@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { Header, Footer, Collapse } from "../components";
-import { Carousel } from "./Carousel";
+import { Carousel } from "../components/Carousel";
 import ListData from "../datas/liste.json";
 import { useParams } from "react-router-dom";
 import "../styles/FicheLogement.scss";

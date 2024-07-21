@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   .toggle {
-    width: 90%;
+    width: 75%;
     background-color: #f6f6f6;
     font-family: Montserrat;
     font-size: 18px;
@@ -22,7 +22,7 @@
     }
   }
   button {
-    width: 90%;
+    width: 75%;
     height: 52px;
     background-color: #ff6060;
     border-radius: 5px;
@@ -64,7 +64,7 @@
   }
   .collapse {
     .toggle {
-      width: 90%;
+      width: 75%;
     }
   }
 }
