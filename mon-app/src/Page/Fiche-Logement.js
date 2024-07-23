@@ -42,7 +42,7 @@ export function FicheLogement() {
               src={liste.host.picture}
               alt={`Photo de profil de ${liste.host.name}`}
             />
-            {liste.host.name}
+            <div className="text">{liste.host.name}</div>
           </figure>
           <Rating rating={liste.rating} />
         </section>

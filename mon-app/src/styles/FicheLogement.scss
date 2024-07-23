@@ -47,12 +47,15 @@
     color: #ff6060;
     margin-bottom: 21px;
     margin-top: 4px;
+    .text {
+      width: 70px;
+      margin-right: 10px;
+    }
   }
 
   .image-host {
     width: 64px;
     height: 64px;
-    margin-left: 11px;
     border-radius: 63px;
   }
 }
@@ -85,6 +88,14 @@
   .container-plug {
     flex-direction: column;
     margin: 15px 0 0 20px;
+    .title-fl {
+      font-size: 18px;
+      line-height: 25.67px;
+    }
+    .rental {
+      font-size: 14px;
+      line-height: 19.96px;
+    }
     article {
       align-items: flex-start;
     }
@@ -98,6 +109,12 @@
     }
     figure {
       margin-right: 20px;
+      .text {
+        width: 42px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17.11px;
+      }
     }
   }
   .container-collapses {
@@ -105,7 +122,10 @@
     .collapses {
       flex-direction: column;
       gap: 20px;
-
+      button {
+        font-size: 13px;
+        line-height: 18.54px;
+      }
       .toggle {
         width: 100%;
         padding: 0;
