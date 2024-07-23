@@ -22,6 +22,7 @@ export function Carousel() {
       (prevIndex) => (prevIndex - 1 + totalImages) % totalImages
     );
   };
+
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
   };
@@ -34,17 +35,21 @@ export function Carousel() {
           backgroundImage: `url(${filteredPictures[currentImageIndex]})`,
         }}
       >
-        <div
-          className="fa-solid fa-chevron-left"
-          onClick={prevImage}
-        ></div>
+        {totalImages > 1 && (
+          <div
+            className="fa-solid fa-chevron-left"
+            onClick={prevImage}
+          ></div>
+        )}
         <p className="image-count">
           {currentImageIndex + 1} / {totalImages}
         </p>
-        <div
-          className="fa-solid fa-chevron-right"
-          onClick={nextImage}
-        ></div>
+        {totalImages > 1 && (
+          <div
+            className="fa-solid fa-chevron-right"
+            onClick={nextImage}
+          ></div>
+        )}
       </div>
     </div>
   );
