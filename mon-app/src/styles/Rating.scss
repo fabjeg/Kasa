@@ -1,22 +1,22 @@
-
 .stars-container {
-    font-size: 24px;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
-    .filled-star {
-      color: #ff6060;
-      margin-right: 10px;
-    }
-    .empty-star {
-      color: #e3e3e3;
-      margin-right: 10px;
-    }
-.img-info{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+.filled-star {
+  color: #ff6060;
 }
-@media (max-width: 760px){
-  .stars-container{
+.empty-star {
+  color: #e3e3e3;
+}
+.img-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+@media (max-width: 760px) {
+  .stars-container {
     font-size: 18px;
   }
 }
