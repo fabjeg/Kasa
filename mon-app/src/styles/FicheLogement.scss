@@ -1,4 +1,4 @@
-.container-fiche {
+.container-plug {
   display: flex;
   justify-content: space-between;
   margin: 30px 103px 20px 103px;
@@ -17,7 +17,7 @@
     margin: 0;
   }
 
-  .location {
+  .rental {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -82,7 +82,7 @@
 }
 
 @media (max-width: 760px) {
-  .container-fiche {
+  .container-plug {
     flex-direction: column;
     margin: 15px 0 0 20px;
     article {

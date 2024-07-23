@@ -27,11 +27,11 @@ export function FicheLogement() {
   return (
     <div>
       <Carousel />
-      <div className="container-fiche">
+      <div className="container-plug">
         <figcaption className="name">
           <article>
             <h3 className="title-fl">{liste.title}</h3>
-            <p className="location">{liste.location}</p>
+            <p className="rental">{liste.location}</p>
             <Tags tags={liste.tags} />
           </article>
         </figcaption>
