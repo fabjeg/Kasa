@@ -1,0 +1,17 @@
+
+.stars-container {
+    font-size: 24px;
+}
+    .filled-star {
+      color: #ff6060;
+      margin-right: 10px;
+    }
+    .empty-star {
+      color: #e3e3e3;
+      margin-right: 10px;
+    }
+.img-info{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}

@@ -1,5 +1,5 @@
 // import { useParams } from "react-router-dom";
-import { Header, Footer, Collapse, Banner } from "../components";
+import { Collapse, Banner } from "../components";
 import { Container } from "./Container";
 import mountain from "../assets/Mountain_ranges.png";
 
@@ -28,7 +28,6 @@ export function About() {
   ];
   return (
     <div>
-      <Header />
       <Banner image={mountain} />
       <Container>
         {aboutData.map(({ label, content }, index) => (
@@ -39,7 +38,6 @@ export function About() {
           />
         ))}
       </Container>
-      <Footer />
     </div>
   );
 }

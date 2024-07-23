@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { Header, Footer, Collapse } from "../components";
+import { Collapse } from "../components";
 import { Carousel } from "../components/Carousel";
+import { Tags } from "../components/Tags";
+import { Rating } from "../components/Rating";
 import ListData from "../datas/liste.json";
 import { useParams } from "react-router-dom";
 import "../styles/FicheLogement.scss";
@@ -9,62 +11,19 @@ const findList = (id) => {
   return ListData.find((liste) => liste.id === id);
 };
 
-const renderStars = (rating) => {
-  const totalStars = 5;
-  return (
-    <div>
-      {[...Array(totalStars)].map((_, index) => {
-        if (index < rating) {
-          return (
-            <i
-              key={index}
-              className="fa-solid fa-star filled-star"
-            ></i>
-          );
-        }
-        return (
-          <i
-            key={index}
-            className="fa-solid fa-star empty-star"
-          ></i>
-        );
-      })}
-    </div>
-  );
-};
-
-const renderTags = (tags) => {
-  return tags.map((tag, index) => (
-    <div
-      key={index}
-      className="tag"
-    >
-      {tag.split(" ").map((equipment, subIndex) => (
-        <span
-          key={subIndex}
-          className="tag-equipment"
-        >
-          {equipment}
-        </span>
-      ))}
-    </div>
-  ));
-};
-
 export function FicheLogement() {
   const { id } = useParams();
   const liste = findList(id);
 
   return (
     <div>
-      <Header />
       <Carousel />
       <div className="container-fiche">
         <figcaption className="name">
           <article>
             <h3 className="title-fl">{liste.title}</h3>
             <p className="location">{liste.location}</p>
-            <div className="tags">{renderTags(liste.tags)}</div>
+            <Tags tags={liste.tags} />
           </article>
         </figcaption>
         <section className="img-info">
@@ -76,7 +35,7 @@ export function FicheLogement() {
             />
             {liste.host.name}
           </figure>
-          <div className="rating">{renderStars(liste.rating)}</div>
+          <Rating rating={liste.rating} />
         </section>
       </div>
       <div className="container-collapses">
@@ -93,7 +52,6 @@ export function FicheLogement() {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

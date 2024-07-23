@@ -1,18 +1,14 @@
-import { Header, Footer, Main, Cartes, Banner } from "../components";
+import { Main, Cartes, Banner } from "../components";
 import montagne from "../assets/montagne.png";
 
 export function Home() {
   return (
-    <div>
-      <Main>
-        <Header />
-        <Banner
-          image={montagne}
-          description={"Chez vous, partout et ailleurs"}
-        />
-        <Cartes />
-        <Footer />
-      </Main>
-    </div>
+    <Main>
+      <Banner
+        image={montagne}
+        description={"Chez vous,\n partout et ailleurs"}
+      />
+      <Cartes />
+    </Main>
   );
 }
