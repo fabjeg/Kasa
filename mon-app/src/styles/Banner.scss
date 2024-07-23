@@ -21,13 +21,16 @@
     line-height: 68.45px;
     color: #fff;
     text-align: center;
-    white-space: nowrap;
+  }
+  br{
+    display: none;
   }
 }
 @media (max-width: 769px) {
   .container {
     height: 111px;
     margin-top: 27px;
+    
     .title {
       position: absolute;
       font-family: Montserrat;
@@ -36,7 +39,9 @@
       left: 40px;
       top: 16px;
       text-align: left;
-      white-space: pre-wrap;
+    }
+    br{
+      display: block;
     }
   }
   .container-fiche {
