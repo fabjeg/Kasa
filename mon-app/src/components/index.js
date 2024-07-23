@@ -7,6 +7,7 @@ import { Main } from "./Main";
 import { Collapse } from "./Collapse";
 import { Tags } from "./Tags";
 import { Rating } from "./Rating";
+import { Carousel } from "./Carousel";
 
 export {
   Apartment,
@@ -18,4 +19,5 @@ export {
   Collapse,
   Tags,
   Rating,
+  Carousel,
 };

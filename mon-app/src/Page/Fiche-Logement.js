@@ -1,10 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { Collapse } from "../components";
-import { Carousel } from "../components/Carousel";
-import { Tags } from "../components/Tags";
-import { Rating } from "../components/Rating";
+import { Collapse, Carousel, Tags, Rating } from "../components";
 import ListData from "../datas/liste.json";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import "../styles/FicheLogement.scss";
 
 const findList = (id) => {
@@ -14,6 +12,17 @@ const findList = (id) => {
 export function FicheLogement() {
   const { id } = useParams();
   const liste = findList(id);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!liste) {
+      navigate("/erreur");
+    }
+  }, [liste, navigate]);
+
+  if (!liste) {
+    return null;
+  }
 
   return (
     <div>
