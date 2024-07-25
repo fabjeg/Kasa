@@ -42,8 +42,9 @@ export function Carousel() {
           ></div>
         )}
         <p className="image-count">
-          {currentImageIndex + 1} / {totalImages}
+          {totalImages > 1 && `${currentImageIndex + 1} / ${totalImages}`}
         </p>
+
         {totalImages > 1 && (
           <div
             className="fa-solid fa-chevron-right"
